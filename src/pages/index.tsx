@@ -1,17 +1,10 @@
-import styled from 'styled-components'
 import { Layout } from '@/components/layout/MainLayout'
+import { TopView } from '@/features/top/components/TopView/index'
 
-export default function Home() {
+export default function Top() {
   return (
     <Layout>
-      <Wrapper>
-        <h1 className='text-3xl font-bold underline'>Hello world!</h1>
-      </Wrapper>
+      <TopView />
     </Layout>
   )
 }
-
-const Wrapper = styled.section`
-  padding: 4em;
-  background: papayawhip;
-`
