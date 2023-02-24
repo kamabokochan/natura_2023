@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Logo = () => {
   return (
     <Wrap>
-      <LogoIcon xmlns='http://www.w3.org/2000/svg' width='70' viewBox='0 0 239 189'>
+      <LogoIcon xmlns='http://www.w3.org/2000/svg' width='50' viewBox='0 0 239 189'>
         <g>
           <path
             fill='#44733a'
