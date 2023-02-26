@@ -22,14 +22,25 @@ export default function Contact() {
   } = useForm<FormData>({
     resolver: yupResolver(schema),
     defaultValues: {
-      name: '',
-      email: '',
-      body: '',
+      name: 'a',
+      email: 'a@a',
+      body: 'kkkk',
     },
   })
 
-  const onSubmit = (data: FormData) => console.log(data)
-  console.log(errors)
+  const onSubmit = async (data: FormData) => {
+    // console.log(data)
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+    })
+    console.log(res)
+  }
+
   return (
     <Layout>
       <>
