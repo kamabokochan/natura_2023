@@ -19,26 +19,31 @@ export default function Contact() {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
+    reset,
   } = useForm<FormData>({
     resolver: yupResolver(schema),
     defaultValues: {
-      name: 'a',
-      email: 'a@a',
-      body: 'kkkk',
+      name: '',
+      email: '',
+      body: '',
     },
   })
 
   const onSubmit = async (data: FormData) => {
-    // console.log(data)
-    const res = await fetch('/api/contact', {
-      method: 'POST',
-      body: JSON.stringify(data),
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-    })
-    console.log(res)
+    try {
+      await fetch('/api/contact', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+      })
+      alert('送信しました')
+      reset()
+    } catch (error) {
+      alert('送信に失敗しました。しばらく経ってからもう一度お試しください')
+    }
   }
 
   return (
