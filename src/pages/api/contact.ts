@@ -43,7 +43,8 @@ export default async function handler(
       `,
     })
     res.status(200).json({ message: 'success' })
-  } catch (error) {
+  } catch (error: any) {
+    // https://zenn.dev/rabbit/scraps/1efe3f5fa86da1
     res.status(400).json({ message: error.message })
   }
 }
