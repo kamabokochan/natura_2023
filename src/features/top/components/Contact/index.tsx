@@ -1,4 +1,12 @@
-import { FormControl, FormLabel, FormErrorMessage, Input, Textarea, Button } from '@chakra-ui/react'
+import {
+  FormControl,
+  FormLabel,
+  FormErrorMessage,
+  Input,
+  Textarea,
+  Button,
+  Center,
+} from '@chakra-ui/react'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { useForm } from 'react-hook-form'
 import yup from '@/lib/yup.locale'
@@ -46,7 +54,7 @@ export const Contact = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)} style={{ width: '100%' }}>
       <FormControl isInvalid={!!errors.name}>
         <FormLabel>お名前</FormLabel>
         <Input type='text' {...register('name')} />
@@ -62,9 +70,17 @@ export const Contact = () => {
         <Textarea size='sm' resize={'vertical'} {...register('body')} />
         <FormErrorMessage>{errors.body?.message}</FormErrorMessage>
       </FormControl>
-      <Button mt={4} colorScheme='teal' isLoading={isSubmitting} type='submit'>
-        Submit
-      </Button>
+      <Center>
+        <Button
+          mt={4}
+          colorScheme='teal'
+          isLoading={isSubmitting}
+          type='submit'
+          alignSelf={'flex-end'}
+        >
+          送信する
+        </Button>
+      </Center>
     </form>
   )
 }
