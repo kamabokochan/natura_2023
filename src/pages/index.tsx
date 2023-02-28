@@ -1,10 +1,13 @@
 import { Layout } from '@/components/layout/MainLayout'
-import { TopView } from '@/features/top/components/TopView/index'
+import { Contact, ImageList } from '@/features/top/components'
 
 export default function Top() {
   return (
     <Layout>
-      <TopView />
+      <>
+        <ImageList />
+        <Contact />
+      </>
     </Layout>
   )
 }

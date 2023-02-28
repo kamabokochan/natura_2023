@@ -1,7 +1,6 @@
 import { FormControl, FormLabel, FormErrorMessage, Input, Textarea, Button } from '@chakra-ui/react'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { useForm } from 'react-hook-form'
-import { Layout } from '@/components/layout/MainLayout'
 import yup from '@/lib/yup.locale'
 
 const schema = yup
@@ -14,7 +13,7 @@ const schema = yup
 
 type FormData = yup.InferType<typeof schema>
 
-export default function Contact() {
+export const Contact = () => {
   const {
     register,
     handleSubmit,
@@ -47,29 +46,25 @@ export default function Contact() {
   }
 
   return (
-    <Layout>
-      <>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <FormControl isInvalid={!!errors.name}>
-            <FormLabel>お名前</FormLabel>
-            <Input type='text' {...register('name')} />
-            <FormErrorMessage>{errors.name?.message}</FormErrorMessage>
-          </FormControl>
-          <FormControl isInvalid={!!errors.email}>
-            <FormLabel>メールアドレス</FormLabel>
-            <Input type='text' {...register('email')} />
-            <FormErrorMessage>{errors.email?.message}</FormErrorMessage>
-          </FormControl>
-          <FormControl isInvalid={!!errors.body}>
-            <FormLabel>お問い合わせ内容</FormLabel>
-            <Textarea size='sm' resize={'vertical'} {...register('body')} />
-            <FormErrorMessage>{errors.body?.message}</FormErrorMessage>
-          </FormControl>
-          <Button mt={4} colorScheme='teal' isLoading={isSubmitting} type='submit'>
-            Submit
-          </Button>
-        </form>
-      </>
-    </Layout>
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <FormControl isInvalid={!!errors.name}>
+        <FormLabel>お名前</FormLabel>
+        <Input type='text' {...register('name')} />
+        <FormErrorMessage>{errors.name?.message}</FormErrorMessage>
+      </FormControl>
+      <FormControl isInvalid={!!errors.email}>
+        <FormLabel>メールアドレス</FormLabel>
+        <Input type='text' {...register('email')} />
+        <FormErrorMessage>{errors.email?.message}</FormErrorMessage>
+      </FormControl>
+      <FormControl isInvalid={!!errors.body}>
+        <FormLabel>お問い合わせ内容</FormLabel>
+        <Textarea size='sm' resize={'vertical'} {...register('body')} />
+        <FormErrorMessage>{errors.body?.message}</FormErrorMessage>
+      </FormControl>
+      <Button mt={4} colorScheme='teal' isLoading={isSubmitting} type='submit'>
+        Submit
+      </Button>
+    </form>
   )
 }
