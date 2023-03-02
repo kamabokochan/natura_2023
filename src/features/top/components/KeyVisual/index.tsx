@@ -24,7 +24,7 @@ const KeyVisualRoot = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(90vh - 70px);
+  height: calc(100vh - 70px);
   padding: 0 60px;
 `
 
