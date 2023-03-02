@@ -1,6 +1,8 @@
 import PhotoAlbum from 'react-photo-album'
 
-const photos = [
+const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48]
+
+const unsplashPhotos = [
   {
     src: '/img/gallery/img1.jpg',
     width: 307,
@@ -48,4 +50,18 @@ const photos = [
   },
 ]
 
-export const Gallery = () => <PhotoAlbum layout='rows' photos={photos} />
+const photos = unsplashPhotos.map((photo) => ({
+  src: photo.src,
+  width: photo.width,
+  height: photo.height,
+  images: breakpoints.map((breakpoint) => {
+    const height = Math.round((photo.height / photo.width) * breakpoint)
+    return {
+      src: photo.src,
+      width: breakpoint,
+      height,
+    }
+  }),
+}))
+
+export const Gallery = () => <PhotoAlbum layout='masonry' photos={photos} />
