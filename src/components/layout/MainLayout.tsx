@@ -20,5 +20,5 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
 }
 
 const Main = styled.main`
-  padding-top: 70px;
+  padding: 70px 60px 60px;
 `
