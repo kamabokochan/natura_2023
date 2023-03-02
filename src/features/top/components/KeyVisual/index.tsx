@@ -24,7 +24,7 @@ const KeyVisualRoot = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 100px);
 `
 
 const SwiperWrap = styled.div`

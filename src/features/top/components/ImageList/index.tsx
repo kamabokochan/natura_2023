@@ -9,6 +9,11 @@ const unsplashPhotos = [
     height: 205,
   },
   {
+    src: '/img/gallery/img8.jpg',
+    width: 500,
+    height: 750,
+  },
+  {
     src: '/img/gallery/img2.jpg',
     width: 600,
     height: 400,
@@ -39,11 +44,6 @@ const unsplashPhotos = [
     height: 400,
   },
   {
-    src: '/img/gallery/img8.jpg',
-    width: 500,
-    height: 750,
-  },
-  {
     src: '/img/gallery/img9.jpg',
     width: 500,
     height: 750,
@@ -64,4 +64,4 @@ const photos = unsplashPhotos.map((photo) => ({
   }),
 }))
 
-export const Gallery = () => <PhotoAlbum layout='masonry' photos={photos} />
+export const Gallery = () => <PhotoAlbum layout='rows' photos={photos} />
