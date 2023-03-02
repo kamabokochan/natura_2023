@@ -17,6 +17,13 @@ export const Header = () => {
 }
 
 const HeaderRoot = styled.header`
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: space-between;
