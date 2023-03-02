@@ -1,6 +1,6 @@
 import { RiInstagramLine, RiTwitterFill } from 'react-icons/ri'
 import styled from 'styled-components'
-import { Logo } from '@/components/elements/Logo'
+import { Logo } from '@/components/elements'
 
 export const Header = () => {
   return (
