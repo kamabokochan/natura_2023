@@ -56,23 +56,23 @@ export const Contact = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)} style={{ width: '100%' }}>
       <FormControl isInvalid={!!errors.name}>
-        <FormLabel>お名前</FormLabel>
+        <FormLabel>お名前:</FormLabel>
         <Input type='text' {...register('name')} placeholder='例: 山田太郎' />
         <FormErrorMessage>{errors.name?.message}</FormErrorMessage>
       </FormControl>
-      <FormControl isInvalid={!!errors.email} mt={4}>
-        <FormLabel>メールアドレス</FormLabel>
+      <FormControl isInvalid={!!errors.email} mt={'16px'}>
+        <FormLabel>メールアドレス:</FormLabel>
         <Input type='text' {...register('email')} placeholder='例: example@gmail.com' />
         <FormErrorMessage>{errors.email?.message}</FormErrorMessage>
       </FormControl>
-      <FormControl isInvalid={!!errors.body} mt={4}>
-        <FormLabel>お問い合わせ内容</FormLabel>
+      <FormControl isInvalid={!!errors.body} mt={'16px'}>
+        <FormLabel>お問い合わせ内容:</FormLabel>
         <Textarea {...register('body')} placeholder='こちらにお問い合わせ内容を入力してください' />
         <FormErrorMessage>{errors.body?.message}</FormErrorMessage>
       </FormControl>
       <Center>
         <Button
-          mt={4}
+          mt={'16px'}
           colorScheme='teal'
           isLoading={isSubmitting}
           type='submit'

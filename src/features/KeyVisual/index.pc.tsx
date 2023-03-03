@@ -14,7 +14,7 @@ export const KeyVisual_PC = () => {
           広告や雑誌、出版物の取材撮影、人物や建築物、料理、スポーツなど幅広いジャンルの撮影を手がけています。
           岩手県の美しい風景や文化、人々の温かさを写真を通じてお伝えします。
         </KerVisualBody>
-        <KerVisualHeading>岩手の美しい瞬間を、写真に刻む。</KerVisualHeading>
+        <KerVisualHeading>東北・岩手の美しい瞬間を、写真に刻む。</KerVisualHeading>
       </KeyVisualTextWrap>
     </KeyVisualRoot>
   )
