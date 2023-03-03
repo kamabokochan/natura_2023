@@ -1,10 +1,9 @@
-import { Container, VStack, Text, Box, Button, Center } from '@chakra-ui/react'
+import { Container, VStack, Text, Button, Center } from '@chakra-ui/react'
 import { RiInstagramLine, RiArrowRightSLine } from 'react-icons/ri'
-import styled from 'styled-components'
 import { Heading } from '@/components/elements'
 import { Layout } from '@/components/layout/MainLayout'
-import { Contact, KeyVisual } from '@/features/top/components'
-import { Gallery } from '@/features/top/components/ImageList'
+import { Contact, KeyVisual } from '@/features'
+import { Gallery } from '@/features/ImageList'
 
 export default function Top() {
   return (
