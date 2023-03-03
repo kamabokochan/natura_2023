@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { SwiperView } from '../SwiperView'
+import { SwiperView } from './components/SwiperView'
 
-export const PCKeyVisual = () => {
+export const KeyVisual_PC = () => {
   return (
     <KeyVisualRoot>
       <SwiperWrap>

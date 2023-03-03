@@ -1,4 +1,4 @@
-import { RiInstagramLine, RiTwitterFill } from 'react-icons/ri'
+import { RiInstagramLine } from 'react-icons/ri'
 import styled from 'styled-components'
 import { Logo } from '@/components/elements'
 
@@ -10,7 +10,6 @@ export const Header = () => {
         <a href='https://www.instagram.com/photostudionatura/' target='_blank' rel='noreferrer'>
           <RiInstagramLine size={24} />
         </a>
-        {/* <RiTwitterFill size={24} className='ml-2' /> */}
       </SnsList>
     </HeaderRoot>
   )
