@@ -6,28 +6,36 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
 
-const foodImages = [
+const eventImages = [
   {
-    src: '/img/gallery/food/img1.jpg',
-    alt: 'わんこそば',
+    src: '/img/gallery/event/img1.jpg',
+    alt: '盛岡さんさ踊り',
   },
   {
-    src: '/img/gallery/food/img2.jpg',
-    alt: '田沢湖 湖畔の杜ビール',
+    src: '/img/gallery/event/img2.jpg',
+    alt: '紫波夏祭り 神輿',
   },
   {
-    src: '/img/gallery/food/img3.jpg',
-    alt: '大同苑 盛岡冷麺',
+    src: '/img/gallery/event/img3.jpg',
+    alt: '紫波夏祭り 花火',
+  },
+  {
+    src: '/img/gallery/event/img4.jpg',
+    alt: 'チャグチャグ馬コ',
+  },
+  {
+    src: '/img/gallery/event/img5.jpg',
+    alt: '花巻まつり',
   },
 ]
 
-export const Food_SP = () => {
+export const Event_SP = () => {
   return (
     <div>
       <SwiperRoot
         navigation={true}
         pagination={{
-          el: '#food-pagination',
+          el: '#event-pagination',
           clickable: true,
           renderBullet: (_, className) => {
             return (
@@ -42,7 +50,7 @@ export const Food_SP = () => {
         spaceBetween={30}
         loop={true}
       >
-        {foodImages.map((img) => {
+        {eventImages.map((img) => {
           return (
             <SwiperSlide key={img.alt}>
               <Img src={img.src} alt={img.alt} />
@@ -50,7 +58,7 @@ export const Food_SP = () => {
           )
         })}
       </SwiperRoot>
-      <CustomPagination id='food-pagination' className='swiper-pagination'></CustomPagination>
+      <CustomPagination id='event-pagination' className='swiper-pagination'></CustomPagination>
     </div>
   )
 }
