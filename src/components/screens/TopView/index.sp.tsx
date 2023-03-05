@@ -4,15 +4,18 @@ import { Heading } from '@/components/elements'
 import { Layout_SP } from '@/components/layout/MainLayout/index.sp'
 import { Contact, KeyVisual_SP } from '@/features'
 import { Gallery } from '@/features/ImageList'
+import { Food_SP } from '@/features/ImageList/Food/index.sp'
 
 export const TopView_SP = () => {
   return (
     <Layout_SP>
       <>
         <KeyVisual_SP />
+        
+        <Food_SP />
 
         <Box>
-          <Gallery />
+          {/* <Gallery /> */}
           <Center mt={'16px'}>
             <Button
               as='a'
