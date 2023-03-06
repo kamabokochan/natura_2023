@@ -3,7 +3,6 @@ import { RiInstagramLine, RiArrowRightSLine } from 'react-icons/ri'
 import { Heading } from '@/components/elements'
 import { Layout_SP } from '@/components/layout/MainLayout/index.sp'
 import { Contact, KeyVisual_SP } from '@/features'
-import { Gallery } from '@/features/ImageList'
 import { Event_SP } from '@/features/ImageList/Event/index.sp'
 import { Food_SP } from '@/features/ImageList/Food/index.sp'
 

@@ -3,7 +3,8 @@ import { RiInstagramLine, RiArrowRightSLine } from 'react-icons/ri'
 import { Heading } from '@/components/elements'
 import { Layout_PC } from '@/components/layout/MainLayout/index.pc'
 import { Contact, KeyVisual_PC } from '@/features'
-import { Gallery } from '@/features/ImageList'
+import { Event_PC } from '@/features/ImageList/Event/index.pc'
+import { Food_PC } from '@/features/ImageList/Food/index.pc'
 
 export const TopView_PC = () => {
   return (
@@ -11,8 +12,25 @@ export const TopView_PC = () => {
       <>
         <KeyVisual_PC />
 
+        <Box mt={'56px'} maxW={'1250px'} mx={'auto'}>
+          <Heading as='h2' size='lg' fontFamily={'serif'}>
+            料理
+          </Heading>
+          <Box mt={'12px'}>
+            <Food_PC />
+          </Box>
+        </Box>
+
+        <Box mt={'56px'} maxW={'1250px'} mx={'auto'}>
+          <Heading as='h2' size='lg' fontFamily={'serif'}>
+            祭り・催し物
+          </Heading>
+          <Box mt={'12px'}>
+            <Event_PC />
+          </Box>
+        </Box>
+
         <Box>
-          <Gallery />
           <Center mt={'16px'}>
             <Button
               as='a'
