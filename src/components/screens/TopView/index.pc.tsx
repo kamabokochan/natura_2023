@@ -21,7 +21,7 @@ export const TopView_PC = () => {
           </Box>
         </Box>
 
-        <Box mt={'56px'} maxW={'1250px'} mx={'auto'}>
+        <Box mt={'112px'} maxW={'1250px'} mx={'auto'}>
           <Heading as='h2' size='lg' fontFamily={'serif'}>
             祭り・催し物
           </Heading>
@@ -31,7 +31,7 @@ export const TopView_PC = () => {
         </Box>
 
         <Box>
-          <Center mt={'16px'}>
+          <Center mt={'60px'}>
             <Button
               as='a'
               href='https://www.instagram.com/photostudionatura/'
@@ -46,7 +46,7 @@ export const TopView_PC = () => {
           </Center>
         </Box>
 
-        <Box mt={'96px'} maxW={'xl'} mx={'auto'}>
+        <Box mt={'112px'} maxW={'xl'} mx={'auto'}>
           <Heading as='h2' size='lg'>
             お問い合わせ
           </Heading>
