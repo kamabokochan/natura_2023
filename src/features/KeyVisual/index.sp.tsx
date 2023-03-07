@@ -6,7 +6,7 @@ export const KeyVisual_SP = () => {
   return (
     <KeyVisualRoot>
       <KeyVisualTextWrap>
-        <KerVisualHeading>岩手の美しい瞬間を、写真に刻む。</KerVisualHeading>
+        <KerVisualHeading>東北・岩手の美しい瞬間を、写真に刻む。</KerVisualHeading>
         <KerVisualBody>
           フォトスタジオ NATURA（ナチューラ）は、東北、主に岩手県を中心に活動しており、
           広告や雑誌、出版物の取材撮影、人物や建築物、料理、スポーツなど幅広いジャンルの撮影を手がけています。
@@ -21,7 +21,7 @@ export const KeyVisual_SP = () => {
 }
 
 const KeyVisualRoot = styled.div`
-  padding: 24px 0;
+  padding: 48px 0;
 `
 
 const SwiperWrap = styled.div`
@@ -30,15 +30,15 @@ const SwiperWrap = styled.div`
 `
 
 const KerVisualHeading = styled.p`
-  font-size: 24px;
+  font-size: 22px;
   font-family: serif;
 `
 
 const KerVisualBody = styled.p`
-  font-size: 16px;
+  font-size: 14px;
   font-family: serif;
   max-width: 680px;
-  margin-top: 8px;
+  margin-top: 18px;
 `
 
 const KeyVisualTextWrap = styled.div``

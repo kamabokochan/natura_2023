@@ -21,5 +21,5 @@ export const Layout_SP = ({ children }: { children: React.ReactNode }) => {
 }
 
 const Main = styled.main`
-  padding: 70px 24px 40px;
+  padding: 70px 12px 40px;
 `
