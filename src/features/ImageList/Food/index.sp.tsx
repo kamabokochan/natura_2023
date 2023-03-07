@@ -19,6 +19,30 @@ const foodImages = [
     src: '/img/gallery/food/img3.jpg',
     alt: '大同苑 盛岡冷麺',
   },
+  {
+    src: '/img/gallery/food/img4.jpg',
+    alt: 'ローストビーフ',
+  },
+  {
+    src: '/img/gallery/food/img5.jpg',
+    alt: 'あら汁',
+  },
+  {
+    src: '/img/gallery/food/img6.jpg',
+    alt: '料理',
+  },
+  {
+    src: '/img/gallery/food/img7.jpg',
+    alt: '松茸',
+  },
+  {
+    src: '/img/gallery/food/img8.jpg',
+    alt: '羊羹',
+  },
+  {
+    src: '/img/gallery/food/img9.jpg',
+    alt: 'ジンギスカン',
+  },
 ]
 
 export const Food_SP = () => {

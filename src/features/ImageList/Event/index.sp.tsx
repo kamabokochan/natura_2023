@@ -27,6 +27,22 @@ const eventImages = [
     src: '/img/gallery/event/img5.jpg',
     alt: '花巻まつり',
   },
+  {
+    src: '/img/gallery/event/img6.jpg',
+    alt: 'お祭り 射的',
+  },
+  {
+    src: '/img/gallery/event/img7.jpg',
+    alt: 'お祭り 屋台',
+  },
+  {
+    src: '/img/gallery/event/img8.jpg',
+    alt: 'チャグチャグ馬コ',
+  },
+  {
+    src: '/img/gallery/event/img9.jpg',
+    alt: '盛岡さんさ踊り',
+  },
 ]
 
 export const Event_SP = () => {
