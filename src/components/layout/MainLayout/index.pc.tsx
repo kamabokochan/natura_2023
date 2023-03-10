@@ -1,6 +1,6 @@
 import 'tailwindcss/tailwind.css'
 import { ChakraProvider } from '@chakra-ui/react'
-import { NextSeo } from 'next-seo'
+import { DefaultSeo } from 'next-seo'
 import styled from 'styled-components'
 import { Footer } from '@/components/layout/Footer'
 import { Header } from '@/components/layout/Header'
@@ -11,7 +11,7 @@ export const Layout_PC = ({ children }: { children: React.ReactNode }) => {
     <ChakraProvider>
       <StyledComponentsRegistry>
         <>
-          <NextSeo
+          <DefaultSeo
             title='東北・岩手の写真撮影 | フォトスタジオ NATURA（ナチューラ）'
             description='フォトスタジオ NATURA（ナチューラ）は、東北、主に岩手県を中心に活動しており、 広告や雑誌、出版物の取材撮影、人物や建築物、料理、スポーツなど幅広いジャンルの撮影を手がけています。 岩手県の美しい風景や文化、人々の温かさを写真を通じてお伝えします。'
             canonical='https://photostudionatura.vercel.app/'
