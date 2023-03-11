@@ -29,6 +29,21 @@ export const SwiperView = () => {
       <SwiperSlide>
         <Img src='/img/keyVisual/image03.jpg' alt='' />
       </SwiperSlide>
+      <SwiperSlide>
+        <Img src='/img/keyVisual/image04.jpg' alt='' />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Img src='/img/keyVisual/image05.jpg' alt='' />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Img src='/img/keyVisual/image06.jpg' alt='' />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Img src='/img/keyVisual/image07.jpg' alt='' />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Img src='/img/keyVisual/image08.jpg' alt='' />
+      </SwiperSlide>
     </SwiperRoot>
   )
 }

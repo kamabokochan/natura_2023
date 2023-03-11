@@ -46,8 +46,8 @@ export const TopView_SP = () => {
           </Center>
         </Box>
 
-        <Box mt={'56px'} maxW={'xl'} mx={'auto'}>
-          <Heading as='h2' size='lg'>
+        <Box mt={'56px'}>
+          <Heading as='h2' size='lg' fontFamily={'serif'}>
             お問い合わせ
           </Heading>
           <Text fontSize='md' mt={'16px'}>
