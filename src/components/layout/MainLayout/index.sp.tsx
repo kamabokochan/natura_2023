@@ -23,7 +23,7 @@ export const Layout_SP = ({ children }: { children: React.ReactNode }) => {
                 'フォトスタジオ NATURA（ナチューラ）は、東北、主に岩手県を中心に活動しており、 広告や雑誌、出版物の取材撮影、人物や建築物、料理、スポーツなど幅広いジャンルの撮影を手がけています。 岩手県の美しい風景や文化、人々の温かさを写真を通じてお伝えします。',
               images: [
                 {
-                  url: '/img/ogp/ogp.jpg',
+                  url: 'https://photostudionatura.vercel.app/img/ogp/ogp.jpg',
                   width: 600,
                   height: 330,
                   alt: '東北・岩手の写真撮影 | フォトスタジオ NATURA（ナチューラ）',
