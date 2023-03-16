@@ -13,15 +13,15 @@ const eventImages = [
   },
   {
     src: '/img/gallery/event/img2.jpg',
-    alt: '紫波夏祭り 神輿',
+    alt: 'チャグチャグ馬コ',
   },
   {
     src: '/img/gallery/event/img3.jpg',
-    alt: '紫波夏祭り 花火',
+    alt: '紫波夏祭り 神輿',
   },
   {
     src: '/img/gallery/event/img4.jpg',
-    alt: 'チャグチャグ馬コ',
+    alt: '紫波夏祭り 花火',
   },
   {
     src: '/img/gallery/event/img5.jpg',
@@ -66,9 +66,9 @@ export const Event_SP = () => {
         spaceBetween={30}
         loop={true}
       >
-        {eventImages.map((img) => {
+        {eventImages.map((img, index) => {
           return (
-            <SwiperSlide key={img.alt}>
+            <SwiperSlide key={`${img.alt}_${index}`}>
               <Img src={img.src} alt={img.alt} />
             </SwiperSlide>
           )

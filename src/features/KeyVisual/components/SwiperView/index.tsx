@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 
 import 'swiper/css'
 import 'swiper/css/effect-fade'
+import './styles.css'
 
 export const SwiperView = () => {
   return (
